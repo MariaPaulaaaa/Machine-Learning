@@ -1,1 +1,11 @@
-print ("Hello World")
+import MLCE_CWBO2025.virtual_lab as virtual_lab
+import numpy as np
+
+def objective_func(X):
+	return (np.array(virtual_lab.conduct_experiment(X)))
+
+X_initial = [[33, 6.25, 10, 20, 20, 'celltype_1'],
+            [38, 8, 20, 10, 20, 'celltype_2']]
+Y_initial = objective_func(X_initial)
+
+print(Y_initial)
