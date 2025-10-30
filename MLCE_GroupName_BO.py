@@ -1,6 +1,6 @@
 # Group information
-group_names     = ['Selin Yucebiyik','Maria Paula Sanchez','Antonis Adamou','Ara']
-cid_numbers     = ['000000','06045575','1111','2222']
+group_names     = ['Selin Yucebiyik','Maria Paula Sanchez','Antonis Adamou','Ara Mokree']
+cid_numbers     = ['000000','06045575','1111',' 06036735']
 oral_assessment = [0, 1]
 
 # Helper Class
