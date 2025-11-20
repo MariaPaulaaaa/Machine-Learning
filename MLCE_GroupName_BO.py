@@ -14,7 +14,7 @@ from datetime import datetime
 
 # Helper Class
 class RandomSelection:
-    #           (    , Inputs       , Function      , Data)
+    #           (    , Inputs       , Function      , Data )
     def __init__(self, X_searchspace, objective_func, batch): 
         self.X_searchspace = X_searchspace
         self.batch         = batch
@@ -47,7 +47,6 @@ class BO:
             start_time = datetime.timestamp(datetime.now())
 
 # BO Execution Block
-
 X_initial = ([[33, 6.25, 10, 20, 20, 'celltype_1'],
               [38, 8, 20, 10, 20, 'celltype_3'],
               [37, 6.8, 0, 50, 0, 'celltype_1'],
