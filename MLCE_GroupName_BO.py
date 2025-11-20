@@ -14,12 +14,13 @@ from datetime import datetime
 
 # Helper Class
 class RandomSelection:
-    #                  Inputs         Function        Data
+    #           (    , Inputs       , Function      , Data)
     def __init__(self, X_searchspace, objective_func, batch): 
         self.X_searchspace = X_searchspace
         self.batch         = batch
-
+        # Generating a random sample batch:
         random_searchspace = [self.X_searchspace[random.randrange(len(self.X_searchspace))] for c in range(batch)]
+        # Evaluating the random sample batch using the objective function:
         self.random_Y      = objective_func(random_searchspace)
 
 
